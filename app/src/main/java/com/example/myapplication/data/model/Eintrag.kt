@@ -1,5 +1,5 @@
 package com.example.myapplication.data.model
 
-data class eintrag (
+data class Eintrag (
     val eintrag: String
 )

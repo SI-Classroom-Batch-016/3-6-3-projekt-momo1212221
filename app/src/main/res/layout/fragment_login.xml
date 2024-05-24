@@ -5,7 +5,7 @@
     android:id="@+id/frameLayout2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.loginFragment">
+    tools:context=".ui.LoginFragment">
 
     <TextView
         android:id="@+id/nameLabel"
@@ -58,4 +58,5 @@
         app:layout_constraintEnd_toEndOf="@+id/passwordInput"
         app:layout_constraintStart_toStartOf="@+id/passwordInput"
         app:layout_constraintTop_toBottomOf="@+id/passwordInput" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

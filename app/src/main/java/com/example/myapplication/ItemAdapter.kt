@@ -4,7 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication.data.DataSource
-import com.example.myapplication.databinding.FragmentLoginBinding
+import com.example.myapplication.databinding.ItemBinding
 
 
 class ItemAdapter (
@@ -12,11 +12,10 @@ class ItemAdapter (
     ):RecyclerView.Adapter<ItemAdapter.ItemViewHolder>()
     {
 
-        inner class ItemViewHolder(binding: FragmentLoginBinding) : RecyclerView.ViewHolder(binding.root)
+        inner class ItemViewHolder(binding: ItemBinding) : RecyclerView.ViewHolder(binding.root)
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
-            val binding =
-                FragmentLoginBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+            val binding = ItemBinding.inflate(LayoutInflater.from(parent.context),parent,false)
             return ItemViewHolder(binding)
         }
 
@@ -26,6 +25,9 @@ class ItemAdapter (
 
         override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
             val item = dataset[position]
+
+
+
 
 
 
